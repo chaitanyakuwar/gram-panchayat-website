@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { SlMenu } from "react-icons/sl";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
             ))}
           </nav>
         </div>
-        <div className="flex justify-center gap-6 text-sm">
+        <div className="hidden lg:flex justify-center gap-6 text-sm">
           {bottomMenu.map((item, index) => (
             <NavLink
               key={index}
@@ -62,7 +63,7 @@ const Navbar = () => {
           className="lg:hidden text-gray-800"
           onClick={() => setOpen(!open)}
         >
-          ☰
+          <SlMenu />
         </button>
         {/* Mobile Menu */}
         {open && (
