@@ -18,7 +18,7 @@ import History from "./components/History";
 const App = () => {
   return (
     <>
-      <div className="bg-gray-300 h-full">
+      <div className="bg-gray-200 h-full">
         <Topnav />
         <Navbar />
         

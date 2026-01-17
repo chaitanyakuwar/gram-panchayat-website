@@ -25,7 +25,7 @@ const Navbar = () => {
   const topMenu = menuItems.slice(0, -2);
   const bottomMenu = menuItems.slice(-2);
   return (
-    <header className="bg-white">
+    <header className="bg-white lg:py-5">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-center h-16">
           {/* Desktop Menu */}
